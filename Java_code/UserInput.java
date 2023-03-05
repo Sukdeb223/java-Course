@@ -20,9 +20,16 @@ public class UserInput {
       double num2=input.nextDouble();
       System.out.println("double"+num2);
 
+      // char
+      System.out.println("Enter any Character");
+      char c = input.next().charAt(0); 
+      System.out.println("char"+c);  
+
       //String
       System.out.println("Enter Any String Value");
       String name=input1.nextLine();
       System.out.println("String "+ name);
+
+      
       }
 }
