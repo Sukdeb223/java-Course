@@ -3,7 +3,7 @@ public class BitwiseDay4 {
         
       int a=25;//1 1 0 0 1                          0 0 = 0
       int b=15;// 0 1 1 1 1                          1  1 =1 
-                                                   
+                                                                                                           
       int c=a | b;//1 1 1 1 1 // 31
       System.out.println(c);
 
