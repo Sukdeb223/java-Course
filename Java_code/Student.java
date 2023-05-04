@@ -1,13 +1,44 @@
 public class Student {
-      public static void main(String[] args) {
-           int a=23;
-           float b=34.56f;
-           char ch='c';
-           double c=45.6677;
-           String name="Hello Student";
-           System.out.println(a);
-           System.err.println("Value of"+" "+b);
-           System.out.println(name);
-           System.out.println(ch);
+
+      String name;
+      int id;
+      int age;
+      String phone;
+      String clsss;
+      String sec;
+
+       static int abc;
+      public Student(String name, int id, int age, String phone, String clsss, String sec) {
+            this.name = name;
+            this.id = id;
+            this.age = age;
+            this.phone = phone;
+            this.clsss = clsss;
+            this.sec = sec;
       }
+
+      public Student(String name, int id, int age) {
+            this.name = name;
+            this.id = id;
+            this.age = age;
+      }
+      
+      public Student(String name, int id, int age, String phone) {
+            this.name = name;
+            this.id = id;
+            this.age = age;
+            this.phone = phone;
+      }
+      public void displayUserdata() {
+            System.out.println(name +":-"+"Age"+" "+age);
+      }
+
+
+      @Override
+      public String toString() {
+            return "Student [name=" + name + ", id=" + id + ", age=" + age + ", phone=" + phone + ", clsss=" + clsss
+                        + ", sec=" + sec + "]";
+      }
+
+ 
 }
